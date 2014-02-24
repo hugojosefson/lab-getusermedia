@@ -1,0 +1,29 @@
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+}
+
+body {
+  font-family: sans-serif;
+  color: #333;
+  background-color: #eee;
+}
+
+video {
+  border: 1px solid #ddd;
+  width: 100%;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+}
+
+.main {
+  max-width: 640px;
+  width: 100%;
+  margin: 0 auto;
+}
