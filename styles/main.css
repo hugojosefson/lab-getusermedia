@@ -17,13 +17,37 @@ video {
   width: 100%;
 }
 
-ul {
-  list-style-type: none;
-  margin: 0;
+canvas {
+  display: none;
 }
 
 .main {
   max-width: 640px;
   width: 100%;
   margin: 0 auto;
+}
+
+.controls {
+  margin-bottom: 1rem;
+}
+
+.snapshots {
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.snapshots li {
+  flex-wrap: wrap;
+  margin-right: 1rem;
+  width: 30vw;
+}
+
+.snapshots li:nth-child(3n+3) {
+  margin-right: 0
+}
+
+.snapshots li img {
+  width: 100%;
 }
