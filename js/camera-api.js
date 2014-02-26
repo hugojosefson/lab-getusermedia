@@ -3,6 +3,7 @@
   var main = document.querySelector('.main');
   var snapshots = document.querySelector('.snapshots');
   var canvas = document.querySelector('canvas');
+  var video = document.querySelector('video');
   var context = canvas.getContext('2d');
   var localMediaStream = null;
 
@@ -18,7 +19,6 @@
       };
       navigator.getUserMedia(opts, function (stream) {
         localMediaStream = stream;
-        var video = document.querySelector('video');
         video.src = window.URL.createObjectURL(stream);
       }, function (err) {
         console.error(err);
@@ -36,7 +36,8 @@
     var image = document.createElement('img');
 
     if (localMediaStream) {
-      image.src = canvas.toDataURL();
+      context.drawImage(video, 0, 0);
+      image.src = canvas.toDataURL('image/webp');
       listItem.appendChild(image);
       snapshots.appendChild(listItem);
     }
