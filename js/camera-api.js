@@ -32,14 +32,12 @@
   }
 
   function captureImage() {
-    var listItem = document.createElement('li');
     var image = document.createElement('img');
 
     if (localMediaStream) {
       context.drawImage(video, 0, 0);
-      image.src = canvas.toDataURL('image/webp');
-      listItem.appendChild(image);
-      snapshots.appendChild(listItem);
+      image.src = canvas.toDataURL();
+      snapshots.appendChild(image);
     }
   }
 
