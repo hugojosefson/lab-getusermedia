@@ -4,7 +4,7 @@
 
 
 /**
- * The constructor takes one parameter, specifying the video element.
+ * Constructor
  * @param {Object} element
  * @param {Object} opts
  */
