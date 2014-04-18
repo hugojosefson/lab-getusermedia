@@ -1,46 +1,61 @@
-(function () {
+/**
+ * Camera API
+ */
 
-  var main = document.querySelector('.main');
-  var snapshots = document.querySelector('.snapshots');
-  var canvas = document.querySelector('canvas');
-  var video = document.querySelector('video');
+
+/**
+ * The constructor takes one parameter, specifying the video element.
+ * @param {Object} element
+ * @param {Object} opts
+ */
+function Camera(element, opts) {
+  opts = opts || {};
+
+  navigator.getUserMedia = (
+    navigator.getUserMedia ||
+    navigator.webkitGetUserMedia ||
+    navigator.mozGetUserMedia ||
+    navigator.msGetUserMedia
+  );
+
+  if (navigator.getUserMedia) {
+    var self = this;
+
+    this.localMediaStream = null;
+    this.video = element;
+
+    navigator.getUserMedia(opts, function (stream) {
+      self.localMediaStream = stream;
+      self.video.src = window.URL.createObjectURL(stream);
+    }, function (err) {
+      console.error(err);
+    });
+  }
+}
+
+
+/**
+ * Takes a snapshot from the video stream and returns it as an image element.
+ * @return {Object}
+ */
+Camera.prototype.capture = function () {
+  if (!this.localMediaStream) {
+    return;
+  }
+
+  var image = document.createElement('img');
+  var canvas = document.createElement('canvas');
+  canvas.width = this.video.clientWidth;
+  canvas.height = this.video.clientHeight;
   var context = canvas.getContext('2d');
-  var localMediaStream = null;
 
-  function init() {
-    navigator.getUserMedia = (navigator.getUserMedia ||
-                              navigator.webkitGetUserMedia ||
-                              navigator.mozGetUserMedia ||
-                              navigator.msGetUserMedia);
+  document.documentElement.appendChild(canvas);
 
-    if (navigator.getUserMedia) {
-      var opts = {
-        video: true
-      };
-      navigator.getUserMedia(opts, function (stream) {
-        localMediaStream = stream;
-        video.src = window.URL.createObjectURL(stream);
-      }, function (err) {
-        console.error(err);
-      });
+  context.drawImage(this.video, 0, 0);
+  image.src = canvas.toDataURL();
 
-      var captureButton = document.querySelector('button');
-      captureButton.addEventListener('click', captureImage, false);
-    } else {
-      alert('Your browser is old. :(');
-    }
-  }
+  // We're finished with the canvas element
+  canvas.remove();
 
-  function captureImage() {
-    var image = document.createElement('img');
-
-    if (localMediaStream) {
-      context.drawImage(video, 0, 0);
-      image.src = canvas.toDataURL();
-      snapshots.appendChild(image);
-    }
-  }
-
-  init();
-
-})();
+  return image;
+};

@@ -2,20 +2,29 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>Camera API</title>
+  <title>Camera API Demo</title>
+  <link rel="stylesheet" href="styles/normalize.css">
   <link rel="stylesheet" href="styles/main.css">
 </head>
 <body>
-  <div class="main">
-    <h1>Camera API</h1>
-    <video autoplay></video>
-    <canvas></canvas>
-    <div class="controls">
-      <button>Capture image</button>
+  <div class="page-wrap">
+    <div class="header">
+      <h1>Camera API Demo</h1>
     </div>
-    <div class="snapshots">
+    <div class="main">
+      <div class="camera">
+        <video autoplay></video>
+      </div>
+      <div class="controls">
+        <button class="capture-image">Capture</button>
+      </div>
+      <div class="snapshots">
+      </div>
     </div>
   </div>
+  <script src="js/bower_components/zeptojs/src/zepto.js"></script>
+  <script src="js/bower_components/zeptojs/src/event.js"></script>
   <script src="js/camera-api.js"></script>
+  <script src="js/main.js"></script>
 </body>
 </html>

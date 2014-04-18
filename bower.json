@@ -1,0 +1,19 @@
+{
+  "name": "camera-api",
+  "version": "0.0.0",
+  "homepage": "https://github.com/jlowgren/camera-api",
+  "authors": [
+    "Joacim Löwgren <joacim.lowgren@gmail.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "zeptojs": "~1.1.3"
+  }
+}

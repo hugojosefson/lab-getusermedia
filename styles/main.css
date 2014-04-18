@@ -3,35 +3,75 @@
 }
 
 html, body {
+  font: 100%/1.5 Helvetica, Arial, sans-serif;
   margin: 0;
 }
 
 body {
   font-family: sans-serif;
-  color: #333;
-  background-color: #eee;
+  color: dimgray;
+  background-color: beige;
 }
 
-video {
-  border: 1px solid #ddd;
-  width: 100%;
-}
 
-canvas {
-  display: none;
-}
-
-.main {
+/* Wrapper */
+.page-wrap {
   max-width: 640px;
   width: 100%;
   margin: 0 auto;
 }
 
+
+/* Header */
+.header {
+  text-align: center;
+}
+
+
+/* Camera */
+.camera {
+  margin-bottom: 1rem;
+}
+
+.camera video {
+  display: block;
+  background: palegoldenrod;
+  width: 100%;
+}
+
+
+/* Controls */
 .controls {
   margin-bottom: 1rem;
 }
 
+.controls .capture-image {
+  padding: 1rem 3rem;
+  margin-right: 1rem;
+  border: none;
+
+  background: sandybrown;
+  color: white;
+
+  -webkit-transition: background .25s ease;
+  transition: background .25s ease;
+}
+
+.controls .capture-image:hover {
+  background: tomato;
+}
+
+
+/* Image list */
 .snapshots {
+  display: flex;
+  flex-wrap: wrap;
+
   margin: 0;
   padding: 0;
+}
+
+.snapshots img {
+  display: block;
+  width: 25%;
 }
