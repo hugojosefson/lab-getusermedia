@@ -1,5 +1,5 @@
 /**
- * Camera API
+ * Simple Camera API
  */
 
 
@@ -43,11 +43,14 @@ Camera.prototype.capture = function () {
     return;
   }
 
-  var image = document.createElement('img');
+  // Create a temporary canvas element with the current contents of the video
+  // element, then save that data to an image element
   var canvas = document.createElement('canvas');
-  canvas.width = this.video.clientWidth;
-  canvas.height = this.video.clientHeight;
+  var image = document.createElement('img');
   var context = canvas.getContext('2d');
+
+  canvas.width = this.video.videoWidth;
+  canvas.height = this.video.videoHeight;
 
   document.documentElement.appendChild(canvas);
 
