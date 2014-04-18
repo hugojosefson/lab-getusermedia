@@ -11,7 +11,11 @@ $(function () {
     $('.snapshots').append(
       $('<div />')
         .addClass('snapshot')
-        .append(image)
+        .append(
+          $('<a />')
+            .attr('href', image.src)
+            .append(image)
+        )
     );
   });
 

@@ -81,9 +81,7 @@ body {
 
 .snapshots .snapshot {
   padding: .5rem;
-  width: 50%;
-
-  background: palegoldenrod;
+  width: 33.33333%;
 }
 
 .snapshots img {
