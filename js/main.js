@@ -8,6 +8,11 @@ $(function () {
     event.preventDefault();
 
     var image = camera.capture();
-    $('.snapshots').append(image);
+    $('.snapshots').append(
+      $('<div />')
+        .addClass('snapshot')
+        .append(image)
+    );
   });
+
 });
