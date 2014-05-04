@@ -31,3 +31,8 @@ Here's a few suggestions of ways that functionality could be improved:
 
 * Apply filters on captured images by manipulating the `canvas` data.
 * Manipulate image based on microphone input volume.
+
+## Helpful Links
+
+* [Capturing Audio & Video in HTML5](http://www.html5rocks.com/en/tutorials/getusermedia/intro/)
+* [Image Filters with Canvas](http://www.html5rocks.com/en/tutorials/canvas/imagefilters/)
