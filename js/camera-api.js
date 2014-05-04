@@ -6,10 +6,10 @@
 /**
  * Constructor
  * @param {Object} element
- * @param {Object} opts
+ * @param {Object} options
  */
-function Camera(element, opts) {
-  opts = opts || {};
+function Camera(element, options) {
+  options = options || {};
 
   navigator.getUserMedia = (
     navigator.getUserMedia ||
@@ -24,7 +24,7 @@ function Camera(element, opts) {
     this.localMediaStream = null;
     this.video = element;
 
-    navigator.getUserMedia(opts, function (stream) {
+    navigator.getUserMedia(options, function (stream) {
       self.localMediaStream = stream;
       self.video.src = window.URL.createObjectURL(stream);
     }, function (err) {
