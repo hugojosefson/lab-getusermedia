@@ -132,4 +132,8 @@ body {
   .form-group label {
     width: 50%;
   }
+
+  .snapshots .snapshot {
+    width: 50%;
+  }
 }
