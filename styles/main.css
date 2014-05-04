@@ -69,7 +69,6 @@ body {
 
   font-family: Roboto, Helvetica, sans-serif;
   font-size: 1.5rem;
-  background: sandybrown;
   color: white;
   outline: none;
 
@@ -77,9 +76,20 @@ body {
   transition: background .25s ease;
 }
 
-.controls button:hover,
-.controls button:focus {
-  background: tomato;
+.controls .capture-image {
+  background: coral;
+}
+.controls .capture-image:hover,
+.controls .capture-image:focus {
+  background: lightsalmon;
+}
+
+.controls .go-fullscreen {
+  background: dodgerblue;
+}
+.controls .go-fullscreen:hover,
+.controls .go-fullscreen:focus {
+  background: deepskyblue;
 }
 
 
