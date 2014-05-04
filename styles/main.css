@@ -52,7 +52,6 @@ body {
 
 .controls .capture-image {
   padding: 1rem 3rem;
-  margin-right: 1rem;
   border: none;
   width: 100%;
 
@@ -88,4 +87,22 @@ body {
 .snapshots img {
   display: block;
   width: 100%;
+}
+
+
+/* Form */
+.form-group {
+  display: flex;
+  margin-bottom: 1rem;
+}
+
+.form-group label {
+  display: flex;
+  align-items: center;
+  padding: .5rem 0;
+  width: 25%;
+}
+
+.form-group input[type=radio] {
+  margin-right: .5rem;
 }
