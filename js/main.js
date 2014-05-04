@@ -3,7 +3,10 @@ $(function () {
   var $video = $('.camera video');
   var $capture = $('.controls .capture-image');
   var $filters = $('.controls .filter');
-  var camera = new Camera($video[0], {video: true});
+  var camera = new Camera($video[0], {
+    video: true,
+    audio: true
+  });
 
   /* Capture image */
   $capture.on('click', function () {
