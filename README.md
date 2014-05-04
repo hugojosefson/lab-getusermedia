@@ -1,6 +1,6 @@
 # Camera API
 
-Creating something useful out of `getUserMedia`.
+A simple project focusing on `getUserMedia` for lab purposes.
 
 ## Getting Started
 
