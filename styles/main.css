@@ -65,7 +65,8 @@ body {
   transition: background .25s ease;
 }
 
-.controls .capture-image:hover {
+.controls .capture-image:hover,
+.controls .capture-image:focus {
   background: tomato;
 }
 
