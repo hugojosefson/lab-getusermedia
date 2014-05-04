@@ -62,7 +62,7 @@ body {
 }
 
 .controls button {
-  padding: 1rem 3rem;
+  padding: .75rem 3rem;
   margin-bottom: .25rem;
   border: none;
   width: 100%;
