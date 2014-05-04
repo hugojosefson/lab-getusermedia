@@ -30,9 +30,11 @@ python -m SimpleHTTPServer
 Here's a few suggestions of ways that functionality could be improved:
 
 * Apply filters on captured images by manipulating the `canvas` data.
-* Manipulate image based on microphone input volume.
+* Multiple filters simultaneously, e.g. grayscale and higher contrast.
+* Manipulate image based on microphone input volume (requires audio analysis through the [Web Audio API](https://developer.mozilla.org/en-US/docs/Web_Audio_API)).
 
 ## Helpful Links
 
 * [Capturing Audio & Video in HTML5](http://www.html5rocks.com/en/tutorials/getusermedia/intro/)
 * [Image Filters with Canvas](http://www.html5rocks.com/en/tutorials/canvas/imagefilters/)
+* [Getting Started with Web Audio API](http://www.html5rocks.com/en/tutorials/webaudio/intro/)
