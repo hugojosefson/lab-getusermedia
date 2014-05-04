@@ -71,6 +71,7 @@ body {
   font-size: 1.5rem;
   background: sandybrown;
   color: white;
+  outline: none;
 
   -webkit-transition: background .25s ease;
   transition: background .25s ease;
