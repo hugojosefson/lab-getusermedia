@@ -12,7 +12,7 @@ cd camera-api
 bower install
 ```
 
-You will probably need to run a local web server:
+You will probably need to run a local web server to get access to the camera:
 
 ```
 npm install http-server
@@ -30,3 +30,4 @@ python -m SimpleHTTPServer
 Here's a few suggestions of ways that functionality could be improved:
 
 * Apply filters on captured images by manipulating the `canvas` data.
+* Manipulate image based on microphone input volume.
