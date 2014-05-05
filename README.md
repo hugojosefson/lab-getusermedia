@@ -27,11 +27,12 @@ python -m SimpleHTTPServer
 
 ## Tasks
 
-Here's a few suggestions of ways that functionality could be improved:
+Here's a few suggestions in ways that functionality could be improved:
 
 * Apply filters on captured images by manipulating the `canvas` data.
 * Multiple filters simultaneously, e.g. grayscale and higher contrast.
 * Manipulate image based on microphone input volume (requires audio analysis through the [Web Audio API](https://developer.mozilla.org/en-US/docs/Web_Audio_API)).
+* Add a `slider` element to adjust the intensity of each individual filter. 
 
 ## Helpful Links
 
