@@ -7,8 +7,8 @@ A simple project focusing on `getUserMedia` for lab purposes.
 Cloning the repository and installing dependencies:
 
 ```
-git clone git@github.com:jlowgren/camera-api.git
-cd camera-api
+git clone git@github.com:jlowgren/lab-getusermedia.git
+cd lab-getusermedia
 bower install
 ```
 
