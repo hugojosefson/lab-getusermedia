@@ -36,6 +36,7 @@ Here's a few suggestions in ways that functionality could be improved:
 
 ## Helpful Links
 
+* [API Documentation](https://developer.mozilla.org/en-US/docs/Web/API/Navigator.getUserMedia)
 * [Capturing Audio & Video in HTML5](http://www.html5rocks.com/en/tutorials/getusermedia/intro/)
 * [Image Filters with Canvas](http://www.html5rocks.com/en/tutorials/canvas/imagefilters/)
 * [Getting Started with Web Audio API](http://www.html5rocks.com/en/tutorials/webaudio/intro/)
