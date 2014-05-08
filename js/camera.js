@@ -11,13 +11,7 @@
 function Camera(element, options) {
   options = options || {};
 
-  navigator.getUserMedia = (
-    navigator.getUserMedia ||
-    navigator.webkitGetUserMedia ||
-    navigator.mozGetUserMedia ||
-    navigator.msGetUserMedia
-  );
-
+  navigator.getUserMedia = supportsGetUserMedia();
   if (navigator.getUserMedia) {
     var self = this;
 

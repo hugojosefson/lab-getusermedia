@@ -5,8 +5,7 @@ $(function () {
   var $fullscreen = $('.controls .go-fullscreen');
   var $filters = $('.controls .filter');
   var camera = new Camera($video[0], {
-    video: true,
-    audio: true
+    video: true
   });
 
   /* Capture image */

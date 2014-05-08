@@ -2,6 +2,8 @@
 
 A simple project focusing on `getUserMedia` for lab purposes.
 
+**Note:** CSS filters are not available in Firefox without hassle. In other words, they're not available in this project either.
+
 ## Getting Started
 
 Cloning the repository and installing dependencies:
