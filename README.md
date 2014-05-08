@@ -1,4 +1,4 @@
-# Camera API
+# getUserMedia
 
 A simple project focusing on `getUserMedia` for lab purposes.
 
@@ -15,7 +15,7 @@ bower install
 You will probably need to run a local web server to get access to the camera:
 
 ```
-npm install http-server
+npm install -g http-server
 http-server
 ```
 
